@@ -1,0 +1,4 @@
+fzf:
+    executable: fzf
+    opts: []
+    state: true
