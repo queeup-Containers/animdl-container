@@ -1,11 +1,10 @@
 FROM python:alpine3.16
 
-ARG VERSION=1.6.24
+ARG VERSION=1.6.27
 
 RUN apk add --update --no-cache --virtual .build-deps \
         libxslt-dev g++ &&\
     apk add --no-cache fzf libxslt && \
-    YARL_NO_EXTENSIONS=1 \
     pip install --no-cache-dir \
                 --no-compile \
                 --no-warn-script-location \
