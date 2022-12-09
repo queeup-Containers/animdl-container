@@ -1,6 +1,6 @@
 FROM python:alpine3.16
 
-ARG VERSION=1.6.27
+ARG VERSION=1.6.33
 
 RUN apk add --update --no-cache --virtual .build-deps \
         libxslt-dev g++ &&\
