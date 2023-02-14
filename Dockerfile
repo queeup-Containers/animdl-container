@@ -1,6 +1,6 @@
-FROM python:alpine3.16
+FROM python:alpine3.17
 
-ARG VERSION=1.6.33
+ARG VERSION=1.7.2
 
 RUN apk add --update --no-cache --virtual .build-deps \
         libxslt-dev g++ &&\
@@ -9,7 +9,7 @@ RUN apk add --update --no-cache --virtual .build-deps \
                 --no-compile \
                 --no-warn-script-location \
                 --disable-pip-version-check \
-                animdl==${VERSION} &&\
+                lxml animdl==${VERSION} &&\
     apk del .build-deps &&\
     find /usr/local/lib -depth \
         \( \
