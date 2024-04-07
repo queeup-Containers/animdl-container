@@ -5,24 +5,24 @@
 
 Powered by [animdl](https://github.com/justfoolingaround/animdl)
 
-**_Pull from hub.docker.com:_**
+### Pull from hub.docker.com
 
 ```bash
-$ docker pull queeup/animdl-container
+docker pull queeup/animdl-container
 ```
 
-**_Pull from ghcr.io:_**
+### Pull from ghcr.io
 
 ```bash
-$ docker pull ghcr.io/queeup/animdl-container
+docker pull ghcr.io/queeup-containers/animdl-container
 ```
 
-**_Volumes:_**
+### Volumes
 
 - `-v $HOME/Downloads:/downloads`
 - `-v $HOME/.config/animdl_config.yml:/config/animdl_config.yml`
 
-**_Environment:_**
+### Environment
 
 - ANIMDL_CONFIG=/config/animdl_config.yml
 
